@@ -27,12 +27,13 @@ spec:
   backoffLimit: 10
   template:
     metadata:
+      annotations:
+        sidecar.istio.io/inject: "false"
       labels:
         app: storage-version-migration-serving
         app.kubernetes.io/name: knative-serving
         app.kubernetes.io/component: storage-version-migration-job
         app.kubernetes.io/version: devel
-        sidecar.istio.io/inject: "false"
     spec:
       serviceAccountName: controller
       restartPolicy: OnFailure
@@ -40,7 +41,7 @@ spec:
         - name: migrate
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: docker.io/zhaidea/migrate-242d0a35bf580c5b411a545d79618fbf@sha256:7e74746aa023288007019fe469a2386864bce33eaa607942990e76cbc217c964
+          image: docker.io/zhaidea/migrate-242d0a35bf580c5b411a545d79618fbf@sha256:73da7eb6b8407e313fa33e4e7a74b0b66c81d4b19199c897991b43350664a16d
           args:
             - "services.serving.knative.dev"
             - "configurations.serving.knative.dev"
