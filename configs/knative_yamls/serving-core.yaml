@@ -6326,7 +6326,7 @@ metadata:
 spec:
   # This is the Go import path for the binary that is containerized
   # and substituted here.
-  image: docker.io/zhaidea/queue-39be6f1d08a095bd076a71d288d295b6@sha256:fc49f85a6790cfb7a3bda8b78117a10296a87fd9c6886530b8bb29a46369677c
+  image: docker.io/zhaidea/queue-39be6f1d08a095bd076a71d288d295b6@sha256:d60d20a7eed1079717da6e2fc13a61c60025f58f0cfb708af0817dccb1f4e8ad
 
 ---
 # Copyright 2018 The Knative Authors
@@ -6723,7 +6723,7 @@ metadata:
 data:
   # This is the Go import path for the binary that is containerized
   # and substituted here.
-  queue-sidecar-image: docker.io/zhaidea/queue-39be6f1d08a095bd076a71d288d295b6@sha256:fc49f85a6790cfb7a3bda8b78117a10296a87fd9c6886530b8bb29a46369677c
+  queue-sidecar-image: docker.io/zhaidea/queue-39be6f1d08a095bd076a71d288d295b6@sha256:d60d20a7eed1079717da6e2fc13a61c60025f58f0cfb708af0817dccb1f4e8ad
   _example: |-
     ################################
     #                              #
@@ -7805,7 +7805,7 @@ spec:
         - name: activator
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: docker.io/zhaidea/activator-ecd51ca5034883acbe737fde417a3d86@sha256:e8a8deeb63aa3908ffbb0fcbfa0d54c005b249608307a34e51f96f46bc9c646e
+          image: docker.io/zhaidea/activator-ecd51ca5034883acbe737fde417a3d86@sha256:613a5f371acd33285315bd09b539800ab768f89538a6ef908aa62c64dc1f22c5
           # The numbers are based on performance test results from
           # https://github.com/knative/serving/issues/1625#issuecomment-511930023
           resources:
@@ -7970,7 +7970,7 @@ spec:
         - name: autoscaler
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: docker.io/zhaidea/autoscaler-12c0fa24db31956a7cfa673210e4fa13@sha256:6f0e5d86b39917f95cfce72eeeeb767a7d1aa5f8e95a24689c2147a6d5614d2c
+          image: docker.io/zhaidea/autoscaler-12c0fa24db31956a7cfa673210e4fa13@sha256:fb78678381d9dc83c76d47a0bdbd5ea20bd05b0b79690032beaf1ac50bdfe49d
           resources:
             requests:
               cpu: 100m
@@ -8104,7 +8104,7 @@ spec:
         - name: controller
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: docker.io/zhaidea/controller-f6fdb41c6acbc726e29a3104ff2ef720@sha256:91d7dd44f37bd1486c4523a4dfe4c17d85ce11a73e3c9c1e79e0879bb458e542
+          image: docker.io/zhaidea/controller-f6fdb41c6acbc726e29a3104ff2ef720@sha256:a994b37b71909032e4a0bcad5420b448896024d180f9d8b2879f0177d6755338
           resources:
             requests:
               cpu: 100m
@@ -8290,7 +8290,7 @@ spec:
         - name: webhook
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: docker.io/zhaidea/webhook-261c6506fca17bc41be50b3461f98f1c@sha256:fea444e94a2949853b93f92de30f978460ffcafd6f9b6e340afa6942589853af
+          image: docker.io/zhaidea/webhook-261c6506fca17bc41be50b3461f98f1c@sha256:188d06e268d152c028508fad68a933d333c2a57b73d9581c86448d5ae979262d
           resources:
             requests:
               cpu: 100m

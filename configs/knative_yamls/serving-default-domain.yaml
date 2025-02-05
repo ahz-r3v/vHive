@@ -38,7 +38,7 @@ spec:
         - name: default-domain
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: docker.io/zhaidea/default-domain-dd6f55160290a90018ba318b624be12e@sha256:8c2b3ed6c7253530687905eb4b95e335bdbc4781cca3179bbddf5e9605a32c94
+          image: docker.io/zhaidea/default-domain-dd6f55160290a90018ba318b624be12e@sha256:916137c140330f29cd329a7b225d9b25a58a96a94542bd6814aa5508d057f75f
           args: ["-magic-dns=sslip.io"]
           ports:
             - name: http

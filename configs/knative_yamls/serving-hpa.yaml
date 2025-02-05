@@ -49,7 +49,7 @@ spec:
         - name: autoscaler-hpa
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: docker.io/zhaidea/autoscaler-hpa-85c0b68178743d74ff7f663a72802ceb@sha256:a83dafc89a3d72baede8d3f90f02c5b85b242ba72b2fe172f7fa652568b074e6
+          image: docker.io/zhaidea/autoscaler-hpa-85c0b68178743d74ff7f663a72802ceb@sha256:0bc9f2becc31d1bb7491d12e7a2a970dd77ee03ff260da35c4de77cc89a0c9ab
           resources:
             requests:
               cpu: 30m
